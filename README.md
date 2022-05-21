@@ -19,3 +19,7 @@ python3 -m http.server
 # NPM
 
 ![NPM](npm.png)
+
+# Nodemailer
+
+![Email](nodemailer.png)
