@@ -2,6 +2,9 @@ var express = require("express");
 var db = require("./database.js");
 var app = express();
 
+var bodyParser = require('body-parser');
+app.use(bodyParser.json())
+
 var cors = require('cors');
 app.use(cors({
   origin: "*"
@@ -40,5 +43,31 @@ app.get("/api/products", (req, res, next) => {
 
 //HTTP POST method
 app.post("/api/products", (req, res, next) => {
+  const {
+    productName,
+    description,
+    unitPrice,
+  } = req.body
+
+  var sql = "INSERT INTO products (productName, description, unitPrice) VALUES (?,?,?)";
+  var params = [productName, description, unitPrice];
+
+  try {
+
+    db.run(sql, params, (err, result) => {
+      if (err) {
+        res.status(400).json({ error: err.message });
+        return;
+      }
+
+      res.status(200).json({
+        message: "success",
+        data: req.body,
+      })
+    })
+
+  } catch (e) {
+    es.status(400).send(e)
+  }
 
 });
