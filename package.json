@@ -1,0 +1,22 @@
+{
+  "name": "uom-server",
+  "version": "1.0.0",
+  "description": "test package",
+  "main": "demo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/praveendias1180/uom-server.git"
+  },
+  "keywords": [
+    "rangequest"
+  ],
+  "author": "Praveen Dias",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/praveendias1180/uom-server/issues"
+  },
+  "homepage": "https://github.com/praveendias1180/uom-server#readme"
+}
