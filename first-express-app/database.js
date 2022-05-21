@@ -9,4 +9,6 @@ let db = new sqlite3.Database(DBSOURCE, err => {
     } else {
         console.log("Connected to the SQLite database");
     }
-})
+});
+
+module.exports = db;
