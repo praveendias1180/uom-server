@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/praveendias1180/uom-server/issues"
   },
-  "homepage": "https://github.com/praveendias1180/uom-server#readme"
+  "homepage": "https://github.com/praveendias1180/uom-server#readme",
+  "dependencies": {
+    "ascii-text-generator": "^1.0.5"
+  }
 }
