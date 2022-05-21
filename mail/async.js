@@ -5,5 +5,5 @@ const link = 'https://my-json-server.typicode.com/praveendias1180/json_server_de
 fetch(link)
     .then(response =>  response.json())
     .then(data => console.log(data))
-    .catch(e => console.error(e))
+    .catch(e => console.error(e.message))
     .finally(() => console.log('Finished...'))
