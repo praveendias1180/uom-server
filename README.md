@@ -27,3 +27,5 @@ python3 -m http.server
 # OWASP - Open Web Application Security Project
 
 ![OWASP](top10.png)
+
+![Top 2021](top2021.png)
