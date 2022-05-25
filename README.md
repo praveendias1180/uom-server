@@ -33,3 +33,7 @@ python3 -m http.server
 # The Transport Layer Security (TLS) Protocol
 
 ![TLS](tls.png)
+
+# The Certificate
+
+![Server side certification](server-side-certificate.png)
